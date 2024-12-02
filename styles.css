@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+
+}
+
+#logo{
+    font-size: 42px;
+    font-weight: bold;
+    color: red;
+}
+
+#nav-bar-container{
+    padding: 25px 20px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    display:flex;
+    gap: 3em;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+}
+
+li{
+    font-weight: bold;
+    list-style: none;
+   
+}
+li:nth-child(2){
+    color: red;
+}
+
+#banner {
+    max-width: 100vw;
+}
+
+#hero-section , #contact-section{
+    margin: 50px 60px;
+}
+
+#product-section{
+    display: grid;
+    grid-template-areas: 
+    "blank sort"
+    "filter cardcontainer"
+    ;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+#product-filter{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    grid-area: filter;
+}
+#blankdiv{
+    grid-area: blank;
+}
+
+#product-card-container{
+    grid-area: cardcontainer;
+}
+
+.productcards{
+    border: 1px slategrey solid;
+    border-radius: 10px;
+    height: 325px;
+    width: 230px;
+}
+
+#product-card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#product-filter-input , input , textarea   {
+    height: 30px;
+    border-radius: 10px;
+    border: 0.5px solid black;
+}
+
+.productcards img{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+#fresh-blog{
+    margin-top: 5em;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    padding:  30px 0;
+}
+
+.fresh-image-container{
+    border-radius: 10px;
+
+    width: 400px;
+    height: 430px;
+    border-radius: 10px;
+}
+
+.fresh-image-container > img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+}
+
+#product-info-fresh{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+}
+
+footer{
+    margin: 0;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(179, 179, 179);
+}
+
+#contact-section{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+form{
+    font-family: sans-serif;
+    font-size: 18px;
+    display: grid;
+    
+}
+
+.align-check{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.grey-font {
+    font-size: large;
+    font-weight: 500;
+    color: gray;
+}
+
+.product-sort-sub{
+    display: flex;
+    justify-content: space-between;
+}
+
+select{
+    width: 200px;
+    height: 40px;
+}
+
+.black-font{
+    font-size: large;
+    font-weight: 500;
+    color: rgb(31, 31, 31);
+}
+
+button{
+    background-color: red;
+    color: whitesmoke;
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(212, 80, 80);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#buttonn .buttonn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
